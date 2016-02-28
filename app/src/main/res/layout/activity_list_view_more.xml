@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/cfh"
+    tools:context=".MainActivity" >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/mylavelle"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text=""
+        android:id="@+id/exercises"
+        android:layout_below="@+id/mylavelle"
+        android:layout_alignEnd="@+id/mylavelle"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text=""
+        android:id="@+id/reminder"
+        android:layout_below="@+id/exercises"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/exercises"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text=""
+        android:id="@+id/rewards"
+        android:layout_below="@+id/reminder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=""
+        android:id="@+id/diet"
+        android:layout_below="@+id/rewards"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/rewards"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=""
+        android:id="@+id/findfriends"
+        android:layout_below="@+id/diet"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/diet"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=""
+        android:id="@+id/donate"
+        android:layout_below="@+id/findfriends"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/findfriends"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=""
+        android:id="@+id/getpro"
+        android:layout_below="@+id/donate"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/donate"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/helpus"
+        android:layout_below="@+id/getpro"
+        android:layout_alignEnd="@+id/getpro"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"/>
+</RelativeLayout> 

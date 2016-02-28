@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Material Login Example</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_refresh">Settings</string>
+    <string name="action_new">Settings</string>
+    <string name="logo_desc">App logo</string>
+    <string name="country_name">Nigeria</string>
+    <string name="title_activity_cardio3">cardio3</string>
+    <string name="title_activity_streching2">streching2</string>
+    <string name="title_activity_streching4">streching4</string>
+    <string name="title_activity_streching3">streching3</string>
+    <string name="title_activity_yoga">Yoga</string>
+    <string name="title_activity_history">history</string>
+</resources>

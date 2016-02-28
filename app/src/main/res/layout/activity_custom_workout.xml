@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.hack.CustomWorkout"
+    android:background="@drawable/workcustom">
+
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/design_workout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="177dp" />
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/copy_workout"
+        android:layout_alignTop="@+id/design_workout"
+        android:background="@android:color/transparent"
+        android:layout_alignEnd="@+id/fullbody" />
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/beginner_full"
+        android:layout_above="@+id/fullbody"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/fullbody"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="98dp"
+        android:background="@android:color/transparent"
+        android:layout_alignEnd="@+id/beginner_full" />
+</RelativeLayout>

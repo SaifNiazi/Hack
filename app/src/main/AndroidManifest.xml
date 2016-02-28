@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.hack"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconlauncher"
+        android:label="lavelle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".Photo" />
+        <activity android:name=".New" />
+        <activity android:name=".challenges.Challenge1" />
+        <activity android:name=".challenges.Challenge2" />
+        <activity android:name=".challenges.Challenge3" />
+        <activity android:name=".challenges.Challenge4" />
+        <activity android:name=".challenges.Challenge5" />
+        <activity android:name=".challenges.Challenge6" />
+        <activity android:name=".challenges.Challenge7" />
+        <activity android:name=".Workout.Strength" />
+        <activity android:name=".Workout.Cardio" />
+        <activity android:name=".Workout.Yoga" />
+        <activity android:name=".Workout.Streching" />
+        <activity android:name=".cardio.cardio1" />
+        <activity android:name=".cardio.cardio2" />
+        <activity
+            android:name=".cardio.cardio3"
+            android:label="@string/title_activity_cardio3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".cardio.cardio4" />
+        <activity android:name=".cardio.cardio5" />
+        <activity android:name=".streching.streching1" />
+        <activity
+            android:name=".streching.streching2"
+            android:label="@string/title_activity_streching2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".streching.streching4"
+            android:label="@string/title_activity_streching4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".streching.streching3"
+            android:label="@string/title_activity_streching3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".streching.streching5" />
+        <activity android:name=".yoga.yoga1" />
+        <activity android:name=".yoga.yoga2" />
+        <activity android:name=".yoga.yoga3" />
+        <activity android:name=".yoga.yoga4" />
+        <activity android:name=".yoga.yoga5" />
+        <activity android:name=".strength.strength1" />
+        <activity android:name=".strength.strength2" />
+        <activity android:name=".strength.strength3" />
+        <activity android:name=".strength.strength5" />
+        <activity android:name=".strength.strength4" />
+        <activity android:name=".Workout.Custom" />
+        <activity android:name=".workout.Strength" />
+        <activity android:name=".workout.Cardio" />
+        <activity android:name=".workout.Yoga" />
+        <activity android:name=".workout.Strech" />
+        <activity android:name=".workout.Custom" />
+        <activity android:name=".workout.min5" />
+        <activity android:name=".Heath" />
+        <activity android:name=".Workout" />
+        <activity android:name=".Diet" />
+        <activity android:name=".Clinque" />
+        <activity android:name=".Strength" />
+        <activity
+            android:name=".Yoga"
+            android:label="@string/title_activity_yoga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Cardio" />
+        <activity android:name=".Custom" />
+        <activity android:name=".Min5" />
+        <activity android:name=".Streching" />
+        <activity android:name=".streching.Head" />
+        <activity android:name=".streching.Full" />
+        <activity android:name=".streching.Standing" />
+        <activity android:name=".streching.Back" />
+        <activity android:name=".strength.FullBody" />
+        <activity android:name=".strength.Upperbody" />
+        <activity android:name=".strength.Corestrength" />
+        <activity android:name=".strength.Lowerbody" />
+        <activity android:name=".yoga.Yogafull" />
+        <activity android:name=".yoga.Yogafor" />
+        <activity android:name=".yoga.Yogasun" />
+        <activity android:name=".yoga.Yogapilates" />
+        <activity android:name=".cardio.Lightcardio" />
+        <activity android:name=".cardio.Fullcardio" />
+        <activity android:name=".cardio.Bootycardio" />
+        <activity android:name=".cardio.Ploytcardio" />
+        <activity android:name=".health.body_measurement" />
+        <activity android:name=".health.dashboard_year" />
+        <activity android:name=".health.dashboard_day" />
+        <activity android:name=".health.dashboard_month" />
+        <activity android:name=".health.dahboard_week" />
+        <activity android:name=".health.health_all" />
+        <activity android:name=".health.health_calender" />
+        <activity android:name=".health.health_fitness" />
+        <activity android:name=".health.health_list" />
+        <activity android:name=".health.health_me" />
+        <activity android:name=".health.health_medid" />
+        <activity android:name=".health.health_nutrition" />
+        <activity android:name=".health.health_repo" />
+        <activity android:name=".health.health_results" />
+        <activity android:name=".health.health_sleep" />
+        <activity android:name=".health.health_sources" />
+        <activity android:name=".health.health_vitals" />
+        <activity android:name=".fabclass.AugmentedReality" />
+        <activity android:name=".fabclass.AICall" />
+        <activity android:name=".fabclass.AIChat" />
+        <activity android:name=".fabclass.MapFind" />
+        <activity android:name=".Video" />
+        <activity android:name=".Record" />
+        <activity android:name=".TakeChallenges" />
+        <activity android:name=".CustomWorkout" />
+        <activity android:name=".custom.DesignWorkout" />
+        <activity android:name=".custom.CopyWorkout" />
+        <activity android:name=".custom.BeginnerFull" />
+        <activity android:name=".custom.FullBodyCustom" />
+        <activity android:name=".more.MyLavelleActivity" />
+        <activity android:name=".more.ExerciseListMore" />
+        <activity android:name=".more.ReminderMore" />
+        <activity android:name=".more.RewardMore" />
+        <activity android:name=".more.DietMore" />
+        <activity android:name=".more.FindFriendsMore" />
+        <activity android:name=".more.DonateMore" />
+        <activity android:name=".more.GetProMore" />
+        <activity android:name=".more.HelpUsMore" />
+        <activity android:name=".RecommendationStats" />
+        <activity android:name=".Sync" />
+
+        <activity
+            android:name=".history"
+           ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/work3"
+    tools:context="com.example.hp.hack.Cardio">
+
+    <Button
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="75dp"
+        android:width="640dp"
+        android:id="@+id/light_warm_up_cardio"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp" />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="75dp"
+        android:width="640dp"
+        android:id="@+id/full_intensity_cardio"
+        android:layout_below="@+id/light_warm_up_cardio"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="75dp"
+        android:width="640dp"
+        android:id="@+id/plyometric_jump_cardio"
+        android:layout_below="@+id/full_intensity_cardio"
+        android:layout_alignEnd="@+id/full_intensity_cardio" />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="75dp"
+        android:width="640dp"
+        android:id="@+id/booyt_camp"
+        android:layout_below="@+id/plyometric_jump_cardio"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
