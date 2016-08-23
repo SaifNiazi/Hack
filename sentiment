@@ -1,0 +1,107 @@
+package sentiment;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
+import edu.stanford.nlp.sentiment.SentimentCoreAnnotations.SentimentAnnotatedTree;
+import edu.stanford.nlp.time.TimeExpression.Annotation;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.*;
+
+public class sentiment_cls {
+	public static void main(String args[]) throws IOException {
+		sentiment_clss sentiments = new sentiment_clss();
+
+		// sentiments.findSentiment("Stanford University is located in California. "
+		// + "It is a great university");
+
+		File file = new File("C:/Users/G07161984/Desktop/sentiment/Data2_unique.csv");
+		File file_out = new File("C:/Users/G07161984/Desktop/sentiment/Data2_uniqueoutput.txt");
+		FileWriter fw = new FileWriter(file_out.getAbsoluteFile());
+		BufferedWriter bw = new BufferedWriter(fw);
+		String str;
+		try {
+			FileReader fr = new FileReader(file);
+			BufferedReader br = new BufferedReader(fr);
+
+			while ((str = br.readLine()) != null) {
+				// System.out.println("Line:-->" + str);
+				bw.write(sentiments.findSentiment(str));
+				System.out.println(sentiments.findSentiment(str));
+				bw.newLine();
+
+			}
+			bw.close();
+		} catch (FileNotFoundException e) {
+			System.out.println(e);
+		} catch (IOException ex) {
+			Logger.getLogger(sentiment_cls.class.getName()).log(Level.SEVERE,
+					null, ex);
+		}
+
+	}
+}
+
+class sentiment_clss {
+
+	public String findSentiment(String line) {
+
+		Long textLength = 0L;
+		int sumOfValues = 0;
+
+		Properties props = new Properties();
+		props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+		int mainSentiment = 0;
+		System.out.println(line);
+		if (line != null && line.length() > 0) {
+			int longest = 0;
+			edu.stanford.nlp.pipeline.Annotation annotation = pipeline
+					.process(line);
+			for (CoreMap sentence : annotation
+					.get(CoreAnnotations.SentencesAnnotation.class)) {
+				Tree tree = sentence.get(SentimentAnnotatedTree.class);
+				int sentiment = edu.stanford.nlp.neural.rnn.RNNCoreAnnotations
+						.getPredictedClass(tree);
+				String partText = sentence.toString();
+				System.out.println(partText);
+
+				if (partText.length() > longest) {
+					mainSentiment = sentiment;
+					System.out.println(mainSentiment);
+					longest = partText.length();
+					System.out.println(longest);
+				}
+			}
+		}// /calculating length of string
+
+		switch (mainSentiment) {
+		case 0:
+			return "Negative";
+		case 1:
+			return "Negative";
+		case 2:
+			return "Neutral";
+		case 3:
+			return "Positive";
+		case 4:
+			return "Positive";
+		default:
+			return "";
+		}
+
+	}
+
+}
